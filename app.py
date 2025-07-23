@@ -2,8 +2,8 @@ import streamlit as st
 from notion_client import Client
 import os
 
-NOTION_TOKEN = st.secrets["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"]
-DATABASE_ID = st.secrets["239ad926d4d2801f92e6e40a955b120b"]
+NOTION_TOKEN = st.secrets["NOTION_TOKEN"]
+DATABASE_ID = st.secrets["DATABASE_ID"]
 PROP_CARGA = "Carga"
 INCREMENTO = 2.5
 
