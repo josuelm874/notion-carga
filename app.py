@@ -6,9 +6,9 @@ DATABASE_ID = st.secrets["DATABASE_ID"]
 
 notion = Client(auth=NOTION_TOKEN)
 
-st.title("💪 Atualizador de Cargas (Workout Monarch)")
+st.title("Workout Monarch")
 
-if st.button("🔁 Aumentar todas as cargas em +2.5"):
+if st.button("Level Up"):
     # Pegar todas as páginas da database
     response = notion.databases.query(database_id=DATABASE_ID)
 
@@ -32,4 +32,4 @@ if st.button("🔁 Aumentar todas as cargas em +2.5"):
                 }
             )
 
-    st.success("✅ Todas as cargas foram aumentadas em +2.5!")
+    st.success("")
